@@ -1,0 +1,388 @@
+/* import font */
+@font-face {
+    font-family: b;
+    src: url('../font/futura light bt.ttf');
+}
+@font-face {
+    font-family: a;
+    src: url('../font/futura medium bt.ttf');
+}
+@font-face {
+    font-family: robo;
+    src: url('../font/Roboto-Regular.ttf');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    width: 100%; 
+    max-width : 100% !important;
+    height: 100%;
+    overflow-x: hidden;
+    background : #DAE9F3;
+}
+
+.colortextnav{
+    font-family: a;
+    color: #1C1464 !important;
+}
+.pemilra{
+    font-family: a;
+    font-weight: bold;
+    margin-left: 50px;
+}
+nav {
+    background: #ffffff !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+nav a {
+    font-family: a;
+    color: #1C1464 !important;
+}
+
+.active {
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0.5px;
+    border-left-width: 0;
+    border-style: solid;
+    border-color: #1C1464;
+    font-weight: bold;
+    color:#fff;
+}
+
+.utama  {
+    background: #ffffff;
+    display: inline-block;
+    margin: 5% auto;
+    width: 50%;
+    height: 50%;
+    background: #ffffff;
+    border-radius: 5px;
+    padding-right: 0 !important;
+    box-shadow: 10px 13px 9px rgba(0, 0, 0, 0.05);
+}
+
+.bungkuslogo {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.pemilralogo {
+    width: 100%;
+    max-width: 70px !important;
+}
+
+.form-control {
+    font-size: 12px;
+    -moz-border-radius:20px; /* Firefox */
+    -webkit-border-radius: 20px; /* Safari, Chrome */
+    -khtml-border-radius: 20px; /* KHTML */
+    border-radius: 20px;
+    font-family: a;
+}
+
+.background > img {
+    width: 50%;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
+.kanan {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 50%;
+    height: 30%;
+}
+.kiri {
+    width: 50%;
+}
+
+.bungkus {
+    margin-top: 33%;
+    padding-left: 15%;
+}
+
+form {
+    margin-top: 2%;
+}
+
+.selamat {
+    font-family: a;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #1C1464;
+}
+
+.gambar {
+    width: 100%;
+    height: 100%;
+}
+
+.bawah {
+    margin-top: 16%;
+}
+.masuk {
+    background: #1C1464;
+    border-radius: 24.5px;
+    font-size: 12px;
+    font-family: robo;
+    border: #1C1464;
+    width: 100%;
+}
+
+.masuk-teks {
+    font-family: robo;
+    font-weight: bold;
+}
+.garis {
+    margin-top: 1%;
+    border: 1px solid #1C1464;
+}
+
+.kalimat {
+    font-size: 12px;
+    font-family: robo;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) { 
+}
+ 
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .utama {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin-top: 3%;
+    }
+    .gambar {
+        display: none;
+    }
+    
+    .kanan {
+        display: none;
+    }
+
+    .kiri {
+        width: 50%;
+        display: inline-block !important;
+        margin-top: 3%;
+        margin-bottom: 25%;
+    }
+
+    .bungkus {
+        margin-top: 25%;
+        padding-left: 0;
+        transform: translateX(55%);
+        -webkit-transform: translateX(55%);
+        -moz-transform: translateX(55%);
+    }
+ }
+ 
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .utama {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+    .gambar {
+        display: none;
+    }
+    
+    .kanan {
+        display: none;
+    }
+
+    .kiri {
+        width: 55%;
+        display: inline-block !important;
+        margin-top: 3%;
+        margin-bottom: 15%;
+    }
+
+    .bungkus {
+        margin-top: 15%;
+        padding-left: 0;
+        transform: translateX(53%);
+        -webkit-transform: translateX(53%);
+        -moz-transform: translateX(53%);
+    }
+ }
+ 
+@media all and (max-width: 480px) {
+ }
+ 
+
+ 
+/* Small screens - MOBILE */
+@media only screen { /* Define mobile styles - Mobile First */
+    .utama {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin-top: 10%;
+    }
+
+    .gambar {
+        display: none;
+    }
+    
+    .kanan {
+        display: none;
+    }
+
+    .kiri {
+        width: 100%;
+        display: inline-block !important;
+        margin-top: 3%;
+        margin-bottom: 30%;
+        display: none;
+        padding-left: 0;
+    }
+
+    .bungkus {
+        width: 120%;
+        margin-top: 30%;
+        padding-left: 0;
+        padding-right: 0;
+        transform: translateX(18%);
+        -webkit-transform: translateX(18%);
+        -moz-transform: translateX(18%);
+    }
+
+    .background > img {
+        width: 85%;
+        height: 25%;
+        left: 0;
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+    }
+} 
+ 
+@media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+ 
+/* Medium screens - TABLET */
+@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+ 
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .utama {
+        align-items: inherit;
+        display: inherit;
+        justify-content: inherit;
+        width: 80%;
+        margin-top: 30%;
+    }
+
+    .kanan {
+        display: inherit;
+    }
+
+    .gambar {
+        display: inherit;
+    }
+
+    .kiri {
+        width: 50%;
+        margin-top: 3%;
+        margin-bottom: 15%;
+        display: inherit;
+        padding-left: 2%;
+    }
+
+    .bungkus {
+        margin-top: 15%;
+        padding-left: 20%;
+        padding-left: 0;
+        padding-right: 42%;
+    }
+
+    .background > img {
+        width: 80%;
+        height: 30%;
+        left: 0;
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+    }
+
+    .pemilra{
+        margin-left: 10px;
+    }
+    
+ } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+ 
+/* Large screens - DESKTOP */
+@media only screen and (min-width: 64.063em) { 
+    .utama {
+        width: 50%;
+        margin-top: 3%;
+    }
+    .gambar {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    .kiri {
+        width: 30%;
+        margin: 3% auto;
+    }
+    .bungkus {
+        margin-top: 0;
+        padding-left: 0;
+        transform: translateX(0) !important;
+        -webkit-transform: translateX(0) !important;
+        -moz-transform: translateX(0) !important;
+    }
+
+    .background > img {
+        width: 50%;
+        height: 50%;
+        left: 0;
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+    }
+
+    .pemilra{
+        font-family: a;
+        font-weight: bold;
+        margin-left: 50px;
+    }
+} /* min-width 1025px, large screens */
+ 
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+ 
+/* XLarge screens */
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+ 
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+ 
+/* XXLarge screens */
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */
+ 
+/*------------------------------------------*/
+ 
+ 
+ 
+/* Portrait */
+@media screen and (orientation:portrait) { /* Portrait styles here */ }
+/* Landscape */
+@media screen and (orientation:landscape) { /* Landscape styles here */ }

@@ -1,0 +1,72 @@
+/* import font */
+@font-face {
+    font-family: b;
+    src: url('../font/futura light bt.ttf');
+}
+@font-face {
+    font-family: a;
+    src: url('../font/futura medium bt.ttf');
+}
+@font-face {
+    font-family: robo;
+    src: url('../font/Roboto-Regular.ttf');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    width: 100%; 
+    max-width : 100% !important;
+    height: 100%;
+    overflow-x: hidden;
+    background : #ffffff;
+}
+
+.colortextnav{
+    font-family: a;
+    color: #1C1464 !important;
+}
+
+.pemilra{
+    font-family: a;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+nav {
+    background: #ffffff !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+nav a {
+    font-family: a;
+    color: #1C1464 !important;
+}
+
+.active {
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0.5px;
+    border-left-width: 0;
+    border-style: solid;
+    border-color: #1C1464;
+    font-weight: bold;
+    color:#fff;
+}
+
+.wave-container {
+    background: #ffffff;
+}
+
+.wave-container > svg {
+    display: block;
+    transform: translateY(20%) !important;
+    -webkit-transform: translateY(20%) !important;
+    -moz-transform: translateY(20%) !important;
+}
